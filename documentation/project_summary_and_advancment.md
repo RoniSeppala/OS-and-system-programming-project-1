@@ -124,6 +124,7 @@ All error messages are addressed previously.
 ## Additional edgecases
 ### not ending in input in a newline when using without arguments
 ![DemoImage](./additionalEdgeCaseimage.png)
+
 One edge case which was not adressed in the instructions is, if the user dosen't end the input in a new line when exiting input. This results in the output starting from the same line, the input ended as can be seen in the first run. if however it ends in a newline, the output starts from the empty line as can be seen in the second example run. 
 
 This was not told to be addressed, so it is left as is and the user is expected to add a newline if they so desire. This however can be easily fixed by either forcing a newline allways or checking if the last character is a newline character.
