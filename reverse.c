@@ -86,14 +86,14 @@ int main(int argc, char *argv[]) {
 
         /* Print the line bytes */
         if (fwrite(line, 1, len, outputFile) < len) {
-            /* optional: handle write error */
+            /* handle write error */
             fprintf(stderr, "error: writing to output file failed\n");
         }
 
         /* If it didn’t include a trailing '\n', add one */
         if (len == 0 || line[len - 1] != '\n') {
             if (fputc('\n', outputFile) == EOF) {
-                /* optional: handle write error */
+                /* handle write error */
                 fprintf(stderr, "error: writing newline to output file failed\n");
             }
         }
